@@ -1,8 +1,8 @@
-package cz.monetplus.requests
+package requests
 
-import cz.monetplus.persistence.entity.ReservationEntity
 import kotlinx.datetime.LocalDateTime
 import kotlinx.serialization.Serializable
+import persistence.entity.ReservationEntity
 
 @Serializable
 data class ReservationRequest(

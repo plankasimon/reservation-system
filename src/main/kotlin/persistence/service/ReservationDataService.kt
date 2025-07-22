@@ -1,19 +1,14 @@
-package cz.monetplus.persistence.service
+package persistence.service
 
-import cz.monetplus.persistence.mapping.ReservationDAO
-import cz.monetplus.persistence.mapping.ReservationTable
-import cz.monetplus.persistence.entity.ReservationEntity
-import cz.monetplus.persistence.mapping.TablesDao
-import cz.monetplus.persistence.mapping.TablesTable
-import cz.monetplus.persistence.repository.ReservationsRepository
-import cz.monetplus.persistence.mapping.suspendTransaction
-import cz.monetplus.persistence.mapping.toReservationEntity
 import kotlinx.datetime.LocalDateTime
 import mu.KotlinLogging
 import org.jetbrains.exposed.v1.core.SqlExpressionBuilder.eq
 import org.jetbrains.exposed.v1.core.and
 import org.jetbrains.exposed.v1.core.dao.id.EntityID
 import org.jetbrains.exposed.v1.jdbc.deleteWhere
+import persistence.entity.ReservationEntity
+import persistence.mapping.*
+import persistence.repository.ReservationsRepository
 
 class ReservationDataService : ReservationsRepository {
 

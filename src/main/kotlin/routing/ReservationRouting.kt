@@ -1,13 +1,13 @@
-package cz.monetplus.rest
+package routing
 
-import cz.monetplus.requests.ReservationRequest
-import cz.monetplus.service.ReservationService
-import io.ktor.http.HttpStatusCode
+import io.ktor.http.*
 import io.ktor.server.application.*
 import io.ktor.server.request.*
 import io.ktor.server.response.*
 import io.ktor.server.routing.*
- 
+import requests.ReservationRequest
+import service.ReservationService
+
 fun Application.configureReservationRouting() {
     val reservationService = ReservationService()
 

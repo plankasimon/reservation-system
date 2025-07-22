@@ -9,6 +9,7 @@ version = "0.0.1"
 
 application {
     mainClass = "io.ktor.server.netty.EngineMain"
+    group = "cz.splanka"
     java {
         toolchain { languageVersion.set(JavaLanguageVersion.of(21))}
     }

@@ -1,4 +1,4 @@
-package cz.monetplus.persistence.mapping
+package persistence.mapping
 
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext

@@ -1,13 +1,11 @@
-package cz.monetplus.service
+package service
 
-import cz.monetplus.persistence.entity.ReservationEntity
-import cz.monetplus.persistence.service.ReservationDataService
-import cz.monetplus.requests.ReservationRequest
-import cz.monetplus.requests.toModel
-import io.ktor.http.HttpStatusCode
 import kotlinx.datetime.toJavaLocalDateTime
 import kotlinx.datetime.toKotlinLocalDateTime
-import mu.KotlinLogging
+import persistence.entity.ReservationEntity
+import persistence.service.ReservationDataService
+import requests.ReservationRequest
+import requests.toModel
 
 class ReservationService {
     private val reservationDataService = ReservationDataService()

@@ -1,4 +1,4 @@
-package cz.monetplus.persistence.entity
+package persistence.entity
 
 import kotlinx.serialization.Serializable
 import kotlinx.datetime.LocalDateTime

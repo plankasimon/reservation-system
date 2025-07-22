@@ -1,7 +1,7 @@
 ktor:
   application:
       modules:
-          - cz.monetplus.ApplicationKt.module
+          - ApplicationKt.module
   deployment:
       port: 6090
   development: true

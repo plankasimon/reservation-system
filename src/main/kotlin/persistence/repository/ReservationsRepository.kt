@@ -1,7 +1,7 @@
-package cz.monetplus.persistence.repository
+package persistence.repository
 
-import cz.monetplus.persistence.entity.ReservationEntity
 import kotlinx.datetime.LocalDateTime
+import persistence.entity.ReservationEntity
 
 interface ReservationsRepository {
 
